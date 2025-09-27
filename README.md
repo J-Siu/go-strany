@@ -98,12 +98,14 @@ func main(){
 }
 ```
 
-### Change Log
+## Change Log
 
 - v1.0.0
   - Initial commit
+- v1.1.0
+  - Add `error` and `*error` support
 
-### License
+## License
 
 The MIT License (MIT)
 

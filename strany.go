@@ -73,6 +73,10 @@ func (e *strAny) Str(data any) (str string) {
 		str = v
 	case *string:
 		str = *v
+	case error:
+		str = v.Error()
+	case *error:
+		str = (*v).Error()
 	case int:
 		str = fmt.Sprint(v)
 	case int8:
