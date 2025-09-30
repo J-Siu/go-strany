@@ -21,9 +21,12 @@ THE SOFTWARE.
 */
 
 // Convert anything to string
+//
+// Deprecated: This project is now merged into [go-helper](github.com/J-Siu/go-helper) under str.
 package strany
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 )
@@ -77,6 +80,12 @@ func (e *strAny) Str(data any) (str string) {
 		str = v.Error()
 	case *error:
 		str = (*v).Error()
+	case bytes.Buffer:
+		str = v.String()
+	case *bytes.Buffer:
+		if v != nil {
+			str = v.String()
+		}
 	case int:
 		str = fmt.Sprint(v)
 	case int8:

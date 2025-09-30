@@ -1,5 +1,7 @@
 # go-StrAny
 
+> Deprecated: This project is now merged into [go-helper](github.com/J-Siu/go-helper) under str.
+
 Convert anything to string.
 
 ## Installation
@@ -14,7 +16,7 @@ go get github.com/J-Siu/go-strany
 import (
   "fmt"
 
-  "github.com/J-Siu/go-strany"
+  "github.com/J-Siu/go-helper/v2/strany"
 )
 
 type NUM struct {
@@ -104,6 +106,8 @@ func main(){
   - Initial commit
 - v1.1.0
   - Add `error` and `*error` support
+- v1.2.0
+  - Add `bytes.Buffer` and `*byte.Buffer` support
 
 ## License
 
