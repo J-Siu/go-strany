@@ -1,6 +1,6 @@
 # go-StrAny
 
-> Deprecated: This project is now merged into [go-helper](github.com/J-Siu/go-helper) under str.
+> Deprecated: This project is now merged into [go-helper/v2](https://github.com/J-Siu/go-helper) under str.
 
 Convert anything to string.
 
